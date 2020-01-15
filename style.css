@@ -2,8 +2,9 @@ body {
 	background-color: #94B0DA;
 }
 
-#date {
+#clock {
 	width: 600px;
+	height:200px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: auto;
@@ -13,7 +14,10 @@ body {
 }
 
 #time {
-	width: 600px;
-	height: 200px;
-	border:5px solid black;
+	text-align:center;
+	font-family:sans-serif;
+	font-color:black;
+	letter-spacing:3px;
+	font-size:28px;
+
 }

@@ -17,7 +17,9 @@ function realTimeClock (){
 	}
 
 	var timeString = hrs + ":" + mins + ":" + secs;
+
 $("#time").html(timeString);
+
 }
 
 $(document).ready(function(){
