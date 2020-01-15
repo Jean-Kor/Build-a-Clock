@@ -1,8 +1,25 @@
-var timeDisplay = clock.js.getElementById('time');
+function realTimeClock (){
+	var time = new Date();
+	var hrs = hrs.getHours();
+	var mins = mins.getMinutes();
+	var secs = secs.getSeconds();
 
-function timechange() {
-	var dateString = new Date().toLocaleString("en-us", {timezone: "EST"});
-	var
+	if (hrs < 10){
+		return "0" + hrs;
+	}
+
+	if (mins < 10){
+		return "0" + mins;
+	}
+
+	if (secs < 10){
+		return "0" + secs;
+	}
+
+	var timeString = hrs + ":" + mins + ":" + secs;
+$("#time").html(timeString);
 }
 
-setInterval ("timechange();",1000);
+$(document).ready(function(){
+	setInterval(realTimeClock, 1000);
+});
